@@ -47,7 +47,7 @@
  */
 
 const util = require('util')
-const axios = require('axios')
+import axios from 'axios';
 
 console.log('Arguments =', util.inspect(args, false, 2, true))
 

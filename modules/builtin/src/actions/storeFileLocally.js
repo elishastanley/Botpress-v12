@@ -1,4 +1,4 @@
-const axios = require('axios')
+import axios from 'axios';
 const FormData = require('form-data')
 const uuidv4 = require('uuid').v4
 const path = require('path')

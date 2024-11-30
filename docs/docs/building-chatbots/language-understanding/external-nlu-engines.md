@@ -50,7 +50,7 @@ return sync(sdk, botId)
 `onFileChanged` is called with the file name containing changes when a file is either created, edited or deleted. What we want to do now is to check if the change is relevant (e.g., change in intents/entities) and sync the data to your custom NLU. Our hook will now look like this:
 
 ```js
-const axios = require('axios')
+import axios from 'axios';
 async function sync(bp: typeof sdk, botId: string) {
   const ghost = bp.ghost.forBot(botId)
   ghost.onFileChanged(async f => {

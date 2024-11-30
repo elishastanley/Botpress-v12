@@ -84,7 +84,7 @@ We will use `axios` as an HTTP client.
 Start by creating a new JavaScript file in `/data/global/actions/callApi.js`. Then copy the following code:
 
 ```javascript
-const axios = require('axios')
+import axios from 'axios';
 
 /**
  * @title Call the Github API to fetch Botpress repositories

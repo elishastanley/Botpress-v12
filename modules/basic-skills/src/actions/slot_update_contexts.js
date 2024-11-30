@@ -1,4 +1,4 @@
-const axios = require('axios')
+import axios from 'axios';
 
 /**
  * Update the session nluContexts for a specific intent

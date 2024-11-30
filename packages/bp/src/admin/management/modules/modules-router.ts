@@ -55,7 +55,7 @@ class ModulesRouter extends CustomAdminRouter {
       '/:moduleName/enabled/:enabled',
       this.asyncMiddleware(async (req, res) => {
         const { moduleName } = req.params
-        const enabled = yn(req.params.enabled)
+        const enabled = yn(req.params.enabled) ?? false
 
         const { location, fullPath } = await this._findModule(moduleName)
 

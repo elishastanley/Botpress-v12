@@ -363,8 +363,8 @@ const printMigrationHistory = async () => {
 
 export default async function(options: Options) {
   app = createApp()
-  includePasswords = options.includePasswords || yn(process.env.BP_DIAG_INCLUDE_PASSWORDS)
-  outputFile = options.outputFile || yn(process.env.BP_DIAG_OUTPUT)
+  // includePasswords = options.includePasswords || yn(process.env.BP_DIAG_INCLUDE_PASSWORDS)
+  // outputFile = options.outputFile || yn(process.env.BP_DIAG_OUTPUT)
 
   await printGeneralInfos()
   listEnvironmentVariables()

@@ -21,7 +21,7 @@
   }
 
   // import axios or any library here
-  const axios = require('axios')
+  import axios from 'axios';
 
   // extract random image from nasa data
   const extractRandomImage = data => {

@@ -49,7 +49,7 @@ export const generateUserToken = ({
   audience
 }: Token): TokenResponse => {
   const exp = expiresIn || '2h'
-  const csrf = process.USE_JWT_COOKIES ? uuid.v4() : undefined
+  const csrf = process.USE_JWT_COOKIES ? uuid.v4() : ''
   const jwt = jsonwebtoken.sign({ email, strategy, tokenVersion, csrfToken: csrf, isSuperAdmin }, process.APP_SECRET, {
     expiresIn: exp,
     audience

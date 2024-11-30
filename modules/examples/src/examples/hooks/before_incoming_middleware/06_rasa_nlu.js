@@ -3,7 +3,7 @@
  * To enable this, remove the 'dot' before the name of this file
  */
 
-const axios = require('axios')
+import axios from 'axios';
 
 const eventTypes = ['text'] // Process only 'text' events
 

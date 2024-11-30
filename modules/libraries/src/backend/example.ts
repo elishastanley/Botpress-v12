@@ -1,4 +1,4 @@
-const example = `const axios = require('axios')
+const example = `import axios from 'axios';
 
 module.exports = {
   hello: () => console.log('Hello there!'),

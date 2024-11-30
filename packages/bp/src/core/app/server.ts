@@ -137,7 +137,7 @@ export class HTTPServer {
     }
 
     if (process.core_env.REVERSE_PROXY) {
-      const boolVal = yn(process.core_env.REVERSE_PROXY)
+      const boolVal = yn(process.core_env.REVERSE_PROXY) ?? false
       this.app.set('trust proxy', boolVal === null ? process.core_env.REVERSE_PROXY : boolVal)
     }
 
@@ -235,7 +235,7 @@ export class HTTPServer {
     await this.setupRootPath()
 
     const botpressConfig = await this.configProvider.getBotpressConfig()
-    process.USE_JWT_COOKIES = yn(botpressConfig.jwtToken.useCookieStorage)
+    process.USE_JWT_COOKIES = yn(botpressConfig.jwtToken.useCookieStorage) ?? false
 
     const app = express()
     app.use(process.ROOT_PATH, this.app)

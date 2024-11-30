@@ -1,4 +1,4 @@
-const axios = require('axios')
+import axios from 'axios';
 
 /**
  * Creates an handoff for a given conversation. By default handoffs are unassigned, they can then be assigned to agents and resolved.
