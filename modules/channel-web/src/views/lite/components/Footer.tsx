@@ -6,7 +6,7 @@ const Footer = () => {
     <span>
       <div className={'bpw-powered'}>
         <span>
-          <FormattedMessage
+          {/* <FormattedMessage
             id="footer.poweredBy"
             defaultMessage="We're {icon} by {link}"
             values={{
@@ -29,7 +29,7 @@ const Footer = () => {
                 </a>
               )
             }}
-          />
+          /> */}
         </span>
       </div>
     </span>

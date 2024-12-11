@@ -1,4 +1,4 @@
-import axios from 'axios';
+const axios = require('axios')
 const _ = require('lodash')
 
 const { currentFlow, currentNode } = event.state.context
